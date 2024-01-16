@@ -21,4 +21,4 @@ Certifique-se de ter o Node.js e o Docker instalados em sua máquina.
    ```bash
    npm install
 
-2. execute o comando docker compose up e aplicação irá iniciar na porta: 8000 justamente com o banco de dados na porta 5432
+2. execute o comando docker compose up e aplicação irá iniciar na porta: 8000 justamente com o banco de dados na porta: 5432
