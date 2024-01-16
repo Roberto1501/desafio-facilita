@@ -1,6 +1,6 @@
 # Desafio da Empresa Facilita System
 
-Este repositório representa um desafio proposto pela Empresa Facilita System. O desafio envolve a utilização do Docker para gerenciar a API, juntamente com o Docker Compose para conectar a API e o banco de dados.
+Este repositório representa um desafio proposto pela Empresa Facilita System. O desafio envolve a utilização do Docker para a criação de uma lista de tarefas.
 
 ## Estrutura do Repositório
 
@@ -8,7 +8,6 @@ O repositório possui a seguinte estrutura:
 
 - **api**: Contém os arquivos relacionados à API. O Docker é utilizado para facilitar o gerenciamento e implantação.
 - **client**: Esta pasta contém o front-end desenvolvido com Vite.
-- **docker-compose.yml**: Este arquivo descreve os serviços, redes e volumes necessários para a integração da API e do banco de dados.
 
 ## Como Utilizar
   Execute as intruções do read.me da API e somente depois execute as intruções do read.me do client.
