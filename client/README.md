@@ -10,6 +10,8 @@ Este diretório contém o front-end desenvolvido com Vite como parte do desafio 
 ## Estrutura do Projeto
 
 - **src**: Contém os arquivos fonte do front-end.
+- **DockerFile**: Contém as configurações do docker.
+
 
 ## Como Executar
 
