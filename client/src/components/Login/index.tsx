@@ -18,7 +18,6 @@ export const Login = () => {
           message.success("Logged successufully")
           navigate("/home");
 
-          console.log(result)
 
         } else{
           return message.error("Email or password are incorrect")

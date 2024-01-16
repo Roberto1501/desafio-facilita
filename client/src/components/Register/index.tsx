@@ -20,7 +20,6 @@ export const Register = () => {
 
         if(result){
             message.success("registered successufully")
-            console.log("registered successufully", result)
             form.resetFields();
 
         }

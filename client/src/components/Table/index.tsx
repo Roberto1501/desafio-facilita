@@ -78,7 +78,6 @@ const navigate = useNavigate()
 
   const handleEditClick = (row:ITasks) => {
     // Handle edit action using the id
-    console.log(`Editing row with`,row);
     setIdTask(row.id);
     setTitleEdit(row.title)
     setSubTitleEdit(row.subtitle)
@@ -86,7 +85,6 @@ const navigate = useNavigate()
   };
 
 const handleDeleteClick = (id: number) => {
-  console.log(`Deleting row with id ${id}`);
   setIdTask(id);
   handleOpen(); // Abra o modal aqui, se necessário
 };
@@ -97,7 +95,6 @@ const handleDeleteClick = (id: number) => {
       if (idTask !== null) {
         // Check if idTask is not null before attempting to delete
        const response =  await deleteTask(idTask);
-       console.log(response)
        if(response?.status == 200){
         message.success("Task deleted successfully")
        } else{

@@ -43,7 +43,6 @@ export const AuthProvider = ({children}:IAuthProvider) =>{
     
             if (response !== null) {
                 const payload: { user: IUserData } = { user: response };
-                console.log(payload);
                 return payload.user;
             } else {
                 // Handle the case where Register returns null
