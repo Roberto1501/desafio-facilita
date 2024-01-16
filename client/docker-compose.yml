@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  client:
+    container_name: app
+    image: desafio/client:1.0.0
+    build: .
+    ports:
+      - "5173:5173"
