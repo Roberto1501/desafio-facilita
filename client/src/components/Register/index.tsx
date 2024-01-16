@@ -71,7 +71,7 @@ export const Register = () => {
 
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
             <Button type="primary" htmlType="submit">
-              Sign In
+              Sign Up
             </Button>
           </Form.Item>
         </Form>

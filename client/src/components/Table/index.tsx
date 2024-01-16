@@ -17,7 +17,8 @@ import Modal from '@mui/material/Modal';
 import { message } from 'antd';
 import { useAuth } from '../../context/AuthProvider/useAuth';
 import TextField from '@mui/material/TextField';
-
+import LogoutIcon from '@mui/icons-material/Logout';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function BasicTable() {
@@ -47,7 +48,7 @@ export default function BasicTable() {
 
   const [titleEdit,setTitleEdit] = useState<string>("")
   const [subtitleEdit,setSubTitleEdit] = useState<string>("")
-
+const navigate = useNavigate()
 
  
     useEffect(() => {
@@ -161,7 +162,11 @@ const handleDeleteClick = (id: number) => {
     }
 
 
+  const logout = ()=>{
+    navigate("/login")
   
+    auth.logout()
+  }
 
   return (
     <Box>
@@ -243,6 +248,12 @@ const handleDeleteClick = (id: number) => {
 
 
         <Box sx={{display:"flex", justifyContent:"space-between", marginBottom:"2rem",alignItems:"center"}}> 
+          <Button  onClick={logout}>
+          <LogoutIcon />
+
+          </Button>
+        <LogoutIcon />
+
         <h1>Hello {name}</h1>
         <Button variant='contained' style={{height:"50%"}} onClick={addNewTaskOpen}>
             Add new task
